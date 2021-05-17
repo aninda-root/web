@@ -1,0 +1,854 @@
+/* 
+==============================================
+Global Section
+==============================================
+*/
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+==============================================
+Home, Navbar, Banner Section
+==============================================
+*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('cyber-security-2296269_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+}
+
+ul {
+    float: right;
+    line-height: 50px;
+}
+
+.logo {
+    font-size: 39px;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 50px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #5ce1e6;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.content p .main {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button.btn2 {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #128e92;
+    background: transparent;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background-color: #128e92;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 25px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.btn {
+    float: right;
+    line-height: 37px;
+    margin-right: 12px;
+    border: none;
+    font-size: 1.9rem;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    display: none;
+}
+
+label.check {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+/* 
+================================
+About section
+================================
+*/
+
+#About {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-sec {
+    float: right;
+    width: 40%;
+}
+
+.image-sec img {
+    width: 100%;
+    height: auto;
+
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-top: 18px;
+}
+
+.content-section .content-2 p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.content-section .content-2 h3 {
+    margin-top: 12px;
+    font-size: 20px;
+    color: #5d5d5d;
+
+}
+
+.content-section .content-2 .button {
+    margin-top: 30px;
+}
+
+.content-section .content-2 .button a {
+    background-color: #5ce1e6;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    transition: all 0.3s;
+}
+
+.content-section .content-2 .button a:hover {
+    background-color: #08aaaf;
+}
+
+.content-section .social {
+    margin: 40px 20px;
+}
+
+.content-section .social i {
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+
+}
+
+.content-section .social i:hover {
+    color: #3d3d3d;
+}
+
+.content-section .social a {
+    margin: 0 3px;
+}
+
+/* 
+================================
+Training Sction
+================================
+*/
+
+.training-sec-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0582e3;
+    background-position: center;
+    background-size: cover;
+}
+
+.training-sec-body .row-line {
+    display: flex;
+    justify-content: center;
+}
+
+.column-min {
+    background-color: #fff;
+    height: 354px;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.column-min .icon {
+    height: 94px;
+    width: 100%;
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #2e94e3;
+    border-top: 5px solid #2e94e3;
+    transition: background-color 0.6s;
+}
+
+
+.column-min {
+    cursor: pointer;
+    border-radius: 16px;
+    transition: all 0.6s;
+    box-shadow: 16px 18px #4aa2e6;
+    margin: 33px;
+}
+
+
+
+.column-min .icon h2 {
+    font-weight: 700;
+    font-size: 1.7em;
+    color: #0582e3;
+}
+
+.column-min p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.column-min .main-btn2 {
+    padding: 12px 18px;
+    margin-top: 22px;
+    color: #fff;
+    background-color: #0e6be6;
+    font-size: 1.2rem;
+    border-radius: 23px;
+    transition: all 0.6s;
+}
+
+.column-min .btn-4 {
+    margin-top: 54px;
+}
+
+.column-min .main-btn2:hover {
+    background-color: #08aaaf;
+}
+
+/* 
+================================
+Services Section
+================================
+*/
+
+#services-sec {
+    height: 100vh;
+    width: 100%;
+    background-color: #05c9e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-sec .row-box {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.column {
+    height: 80%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 23px;
+    background: #fff;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 23px;
+    box-shadow: 0px 5px 15px #03484b;
+}
+
+.column .image-col {
+    margin-top: 7px;
+    height: 203px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.column .image-col #img {
+    height: 150px;
+    width: 270px;
+    margin-top: 18px;
+}
+
+.column .image-col #img img {
+    background: transparent;
+}
+
+.column p {
+    margin-top: 33px;
+    font-size: 19px;
+}
+
+.column .serv-details {
+    margin-top: 33px;
+    padding: 13px 23px;
+    background-color: #08aaaf;
+    border-radius: 32px;
+    color: #fff;
+    transition: all 0.6s;
+    font-size: 16px;
+}
+
+.column .serv-details:hover {
+    background-color: #03484b;
+}
+
+/* 
+================================
+Contact Sction
+================================
+*/
+
+#Contact-Us {
+    height: 100vh;
+    background: url('pexels-chevanon-photography-323503.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact-Us {
+    width: 100%;
+}
+
+.contact-info {
+    color: #fff;
+    max-width: 500px;
+    line-height: 60px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contact-info i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+.contact-info a {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.contact-info a:hover {
+    color: rgb(189, 189, 189);
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contact-form .text-box {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 43%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.contact-form .text-box:first-child {
+    margin-right: 1px;
+}
+
+.contact-form textarea {
+    outline: none;
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 93%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 300px !important;
+    font-family: 'Roboto', sans-serif;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+
+}
+
+.contact-form .submit-btn {
+    float: right;
+    background: #2e94e3;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #0582e3;
+
+}
+
+.contact-form #my-form-status {
+    margin-left: 12px;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* 
+================================
+Footer section
+================================
+*/
+
+/* footer {
+    text-align: center;
+}
+
+footer b {
+    font-weight: 400;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+} */
+
+/* 
+================================
+Phone, Tab-Settings
+================================
+*/
+
+@media (min-width: 900px) and (max-width:1037px) {
+    .logo {
+        line-height: 51px;
+        font-size: 2.1rem;
+    }
+}
+
+@media(max-width:1038px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .content h1 {
+        font-size: 1.9rem;
+    }
+
+    .content p {
+        font-size: 1.0rem;
+    }
+}
+
+@media(max-width:890px) {
+    ul {
+        background: #03484b;
+        /* background: #fff; */
+        height: 323px;
+        background-size: cover;
+        width: 100%;
+        left: 0;
+        z-index: 1;
+        top: -100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.6s;
+    }
+
+    .logo {
+        line-height: 40px;
+    }
+
+    .navbar ul li {
+        margin: 1.2px 0;
+        border-bottom: 1px solid rgb(145, 145, 145);
+        margin-top: 2px;
+    }
+
+    .navbar ul li:last-child {
+        border: none;
+    }
+
+    ul li a:hover {
+        color: #0e6be6;
+    }
+
+    .navbar ul li::after {
+        height: 0;
+        width: 0;
+        background: none;
+        left: 0;
+        bottom: 0;
+    }
+
+    .content h1 {
+        font-size: 1.4rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    ul #cut {
+        margin-top: 8px;
+        margin-left: 13px;
+        text-align: center;
+        padding: 2px 2px;
+        border: 2px solid #fff;
+        height: 50px;
+        width: 52px;
+    }
+
+    ul #cut:hover {
+        background: #012c2e;
+    }
+
+    #check:checked~ul {
+        top: 0px;
+    }
+
+    #button {
+        line-height: 23px;
+    }
+
+    button.btn2 {
+        width: 190px;
+    }
+}
+
+@media(max-width:380px) {
+    button.btn2 {
+        width: 170px;
+    }
+
+    .content h1 {
+        font-size: 1.1rem;
+    }
+
+    .content p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .content-section {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .image-sec {
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .image-sec img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .content-section .title {
+        text-align: center;
+    }
+
+    .content-section .content-2 .button {
+        text-align: center;
+    }
+
+    .content-section .content-2 .button a {
+        padding: 9px 30px;
+
+    }
+
+    .content-section .social {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #Contact-Us {
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+    }
+
+    #Contact-Us .contact-info {
+        margin-top: 30px;
+    }
+
+    .contact-form h1 {
+        font-size: 30px;
+        margin-top: 34px;
+    }
+
+    .contact-form .text-box {
+        width: 100%;
+    }
+
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form .submit-btn {
+        margin-bottom: 13px;
+    }
+
+    .contact-form textarea {
+        margin-left: 10px;
+    }
+
+    .contact-form .text-box {
+        margin-left: 9px;
+    }
+}
+
+@media screen and (max-width: 1354px) {
+    .training-sec-body {
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .row-line {
+        flex-wrap: wrap;
+    }
+
+    .column-min {
+        margin: 14px;
+        box-shadow: none;
+        width: 300px;
+        height: 300px;
+    }
+
+    .column-min:hover {
+        transform: none;
+    }
+}
+
+@media screen and (max-width:1216px) {
+    #services-sec .row-box .column .image-col h3 {
+        font-size: 1.1em;
+    }
+
+    .column .image-col {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:995px) {
+
+    #services-sec {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    #services-sec .row-box {
+        flex-direction: column;
+    }
+
+    .column {
+        height: 384px;
+        width: 355px;
+        box-shadow: 0px 5px 15px #03484b;
+    }
+
+    .column .image-col {
+        height: 8.2em;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .column .image-col h3 {
+        font-size: 1.2rem;
+        margin-top: 0px;
+        font-weight: bold;
+    }
+
+    .column .image-col img {
+        height: 85px;
+    }
+
+    .column p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .column .serv-details {
+        margin-top: 23px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
